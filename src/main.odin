@@ -15,8 +15,6 @@ import imgl "../libs/odin-imgui/impl/opengl"
 import imglfw "../libs/odin-imgui/impl/glfw"
 
 
-
-
 main :: proc() {
 	context.logger = get_logger()
 
@@ -59,8 +57,8 @@ main :: proc() {
 		imgui_new_frame()
 		imgui.new_frame()
 		{
-            main_window()
-        }
+			main_window()
+		}
 		imgui.render()
 
 		gl.Viewport(0, 0, i32(io.display_size.x), i32(io.display_size.y))

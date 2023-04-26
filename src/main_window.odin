@@ -14,9 +14,9 @@ import glfw "vendor:glfw"
 
 main_window :: proc() {
 	// make the sub window take full window size
-	viewport := imgui.get_main_viewport()
-	imgui.set_next_window_pos(viewport.work_pos)
-	imgui.set_next_window_size(viewport.work_size)
+	// viewport := imgui.get_main_viewport()
+	// imgui.set_next_window_pos(viewport.work_pos)
+	// imgui.set_next_window_size(viewport.work_size)
 
 	imgui.begin("main")
 
